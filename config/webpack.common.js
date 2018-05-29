@@ -5,8 +5,10 @@ var helpers = require('./helpers');
 
 module.exports = {
   entry: {
-    // 'polyfills': './src/polyfills.ts',
-    // 'vendor': './src/vendor.ts',
+    'polyfills': './src/common/polyfills.ts',
+    'vendor': './src/common/vendors.ts',
+    'app1': './src/app1/main.ts',
+    'app2': './src/app2/main.ts',
     'app': './src/main.ts'
   },
 
@@ -35,14 +37,17 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        exclude: helpers.root('src', 'app'),
-        loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap' })
+        //exclude: helpers.root('src', 'app'),
+        loader: ExtractTextPlugin.extract({ 
+          fallbackLoader: 'style-loader', 
+          loader: 'css-loader?sourceMap' 
+        })
       },
-      {
-        test: /\.css$/,
-        include: helpers.root('src', 'app'),
-        loader: 'raw-loader'
-      }
+      // { ?????
+      //   test: /\.css$/,
+      //   include: helpers.root('src', 'app'),
+      //   loader: 'raw-loader'
+      // }
     ]
   },
 
