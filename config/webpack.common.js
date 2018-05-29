@@ -64,6 +64,7 @@ module.exports = {
       name: ['app', 'vendor', 'polyfills']
     }),
 
+    // to setup for multiple html files: https://github.com/jantimon/html-webpack-plugin/issues/218
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     })
