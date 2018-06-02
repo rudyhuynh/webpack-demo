@@ -3942,9 +3942,9 @@ type-is@~1.6.15, type-is@~1.6.16:
     media-typer "0.3.0"
     mime-types "~2.1.18"
 
-typescript@~2.3.1:
-  version "2.3.4"
-  resolved "https://registry.npmjs.org/typescript/-/typescript-2.3.4.tgz#3d38321828231e434f287514959c37a82b629f42"
+typescript@^2.9.1:
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.1.tgz#fdb19d2c67a15d11995fd15640e373e09ab09961"
 
 uglify-js@3.3.x:
   version "3.3.27"
